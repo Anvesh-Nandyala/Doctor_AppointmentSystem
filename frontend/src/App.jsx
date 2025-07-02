@@ -13,6 +13,7 @@ import Appointment from './pages/appointments'
 import Navbar from './components/Navbar'
 import Store from './pages/Store'
 import GeminiChat from './components/GeminiChat'
+import Footer from './components/Footer'
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
         <Route path='/appointments/:docId' element={<Appointment/>} />
         <Route path='/store' element={<Store/>}/>
       </Routes>
+      <Footer/>
       {showChat && <GeminiChat />}
       <button onClick={() => setShowChat(prev => !prev)} className="fixed bottom-4 right-4 bg-primary text-white px-4 py-2 rounded-full shadow-lg z-50">
         {showChat ? 'Close Chat' : 'Chat'}
