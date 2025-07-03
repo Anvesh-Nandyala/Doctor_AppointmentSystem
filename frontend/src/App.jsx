@@ -5,16 +5,15 @@ import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import Login from './pages/Login'
 import Myprofile from './pages/Myprofile'
-import Myappointments from './pages/Myappointments'
+import MyAppointments from './pages/MyAppointments'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import Doctors from './pages/Doctors'
-import Appointment from './pages/appointments'
 import Navbar from './components/Navbar'
 import Store from './pages/Store'
 import GeminiChat from './components/GeminiChat'
 import Footer from './components/Footer'
-
+import Appointments from './pages/Appointments'
 
 function App() {
 
@@ -31,8 +30,8 @@ function App() {
         <Route path='/about' element={<About/>} />
         <Route path='/contact' element={<Contact/>} />
         <Route path='/my-profile' element={<Myprofile/>} />
-        <Route path='/my-appointments' element={<Myappointments/>} />
-        <Route path='/appointments/:docId' element={<Appointment/>} />
+        <Route path='/my-appointments' element={<MyAppointments/>} />
+        <Route path='/appointment/:docId' element={<Appointments/>} />
         <Route path='/store' element={<Store/>}/>
       </Routes>
       <Footer/>
