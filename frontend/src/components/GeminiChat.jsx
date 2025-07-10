@@ -17,7 +17,7 @@ const GeminiChat = () => {
     setLoading(true)
 
     try {
-      const res = await fetch('http://localhost:5000/api/gemini/chat', {
+      const res = await fetch('http://localhost:4000/api/gemini/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ message: input })
@@ -35,7 +35,7 @@ const GeminiChat = () => {
 
   return (
     <div className="fixed bottom-20 right-4 w-80 max-h-[500px] bg-white border shadow-lg rounded-md flex flex-col z-[9999]">
-      <div className="bg-blue-600 text-white px-4 py-2 rounded-t-md font-semibold">Gemini Chat</div>
+      <div className="bg-blue-600 text-white px-4 py-2 rounded-t-md font-semibold">Assistance</div>
       <div className="flex-1 overflow-y-auto p-2 text-sm">
         {messages.map((m, i) => (
           <div key={i} className={`my-2 ${m.from === 'user' ? 'text-right' : 'text-left'}`}>
