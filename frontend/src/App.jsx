@@ -14,6 +14,9 @@ import Store from './pages/Store'
 import GeminiChat from './components/GeminiChat'
 import Footer from './components/Footer'
 import Appointments from './pages/Appointments'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 function App() {
 

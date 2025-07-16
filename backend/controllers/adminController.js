@@ -76,7 +76,7 @@ const loginAdmin = async(req, res) => {
         const {email, password} = req.body;
 
         if(email===process.env.ADMIN_EMAIL && password===process.env.ADMIN_PASSWORD){
-            //generate JWT token
+            // Generate JWT token
             const token = jwt.sign(email+password, process.env.JWT_SECRET);
             res.status(200).json({success:true, message: "Login successful", token});
         }else{
@@ -88,4 +88,18 @@ const loginAdmin = async(req, res) => {
     }
 }
 
-export {addDoctor, loginAdmin};
+//API to get all doctors (optional, not in original request but useful for admin)
+const allDoctors = async(req, res) => {
+    try{
+
+        const doctors=await doctorModel.find({}).select("-password"); // Exclude password from the response);
+        res.status(200).json({success:true, doctors});
+
+    }catch(error){
+        console.error(error);
+        res.status(500).json({success:false, message: "Internal server error"});
+
+    }
+}
+
+export {addDoctor, loginAdmin, allDoctors};
