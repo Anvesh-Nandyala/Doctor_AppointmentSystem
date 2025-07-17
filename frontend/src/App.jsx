@@ -1,5 +1,6 @@
-import { useState } from 'react'
-import React from 'react'
+import { useState, React } from 'react'
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
@@ -14,8 +15,7 @@ import Store from './pages/Store'
 import GeminiChat from './components/GeminiChat'
 import Footer from './components/Footer'
 import Appointments from './pages/Appointments'
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+
 
 
 function App() {
@@ -24,6 +24,7 @@ function App() {
   
   return (
     <div className='mx-4 sm:mx-[10%]'>
+      <ToastContainer />
       <Navbar/>
       <Routes>
         <Route path='/' element={<Home/>} />

@@ -13,7 +13,7 @@ const docotorSchema =new mongoose.Schema({
     fees: { type: Number, required: true },
     address:{ type :Object , required: true},
     date: { type: Number, required: true,},
-    slots_booked: { type: Object, deafault: {} }
+    slots_booked: { type: Object, default: {} }
 
 },{minimize: false});
 

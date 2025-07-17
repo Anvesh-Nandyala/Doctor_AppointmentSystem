@@ -31,7 +31,7 @@ const DoctorsList = () => {
                 <p className='text-zinc text-sm'>{item.speciality}</p>
 
                 <div className='mt-2 flex items-center gap-1 text-sm'>
-                  <input onChange={()=>changeDoctorAvailability(item._id)} type="checkbox" checked={item.available} />
+                  <input onChange={()=>changeDoctorAvailability(item._id)} type="checkbox" checked={item.availability} />
                   <p>Available</p>
                 </div>
               </div>
