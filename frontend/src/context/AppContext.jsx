@@ -6,7 +6,7 @@ import { toast } from "react-toastify";
 const AppContextProvider =(props)=>{
 
     const currencySymbol='$'
-    const backendUrl= "https://daps-hglp.onrender.com"
+    const backendUrl= "https://daps-backend.onrender.com"
 
 
     const [doctors, setDoctors] = useState([]);
