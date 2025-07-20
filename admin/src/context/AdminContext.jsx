@@ -13,7 +13,7 @@ const AdminContextProvider = (props) =>{
 
     const [aToken ,setAToken] = useState(localStorage.getItem('aToken') ? localStorage.getItem('aToken') : null);
     
-    const backendUrl = "https://daps-hglp.onrender.com";
+    const backendUrl = "https://daps-backend.onrender.com";
 
     const [doctors, setDoctors] = useState([]);
 
