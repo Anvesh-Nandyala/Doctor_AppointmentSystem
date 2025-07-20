@@ -9,7 +9,7 @@ export const DoctorContext = createContext();
 
 const DoctorContextProvider = (props) =>{
 
-    const backendUrl= "https://daps-hglp.onrender.com";
+    const backendUrl= "https://daps-backend.onrender.com";
 
 
     const [dToken ,setDToken] = useState(localStorage.getItem('dToken') ? localStorage.getItem('dToken') : null);
