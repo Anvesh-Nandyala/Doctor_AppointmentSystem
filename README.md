@@ -11,7 +11,7 @@ A full-stack web application for booking doctor appointments, conducting virtual
 - 👤 **User Authentication** – Secure login and registration for patients and doctors
 - 📅 **Appointment Booking** – Book and manage appointments with available doctors
 - 👨‍⚕️ **Doctor Dashboard** – Doctors can view appointments and manage schedules
-- 💬 **Consultation Support** – Virtual consultations (video/chat-ready architecture)
+- 💬 **Consultation Support** – chat-ready architecture
 - 💊 **Medicine Store** – Purchase medicines based on valid prescriptions
 - 📎 **Prescription Upload** – Upload doctor's prescriptions to buy medicines
 - 🧾 **Role-Based Access** – Separate interfaces for patients, doctors, and admin
