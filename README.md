@@ -1,3 +1,6 @@
+INTERN ID : CITS2106
+
+
 # 🩺 Doctor Appointment Booking System
 
 A full-stack web application for booking doctor appointments, conducting virtual consultations, and ordering prescribed medicines online. This system streamlines the healthcare experience by connecting patients and doctors on a secure, user-friendly platform.
